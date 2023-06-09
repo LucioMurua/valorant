@@ -1,2 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,900&display=swap');
 
+@font-face {
+    font-family: 'barlow-medium';
+    src: url(../resources/fonts/barlow/Barlow-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'tungsten-bold';
+    src: url(../resources/fonts/Tungsten-Bold.otf);
+}
+
+:root{
+    --color-redValorant: #ff4655;
+    --color-beige: #ece8e1;
+    --color-black: #0f1923;
+    --font-tungsten: 'tungsten-bold', Arial, sans-serif;
+    --font-barlowBold:'Barlow', sans-serif;
+    --font-barlowMedium: 'barlow-medium', sans-serif;
+}
+
+main{
+    font-family: var(--font-barlowBold);
+    font-size: 150px;
+    border: 1px solid red;
+    -webkit-text-stroke-color: #dbd8d2;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
