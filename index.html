@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
     <link rel="shortcut icon" href="./resources/favicon.png" />
-    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Valorant Web</title>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <img class="nav__riot" src="./resources/Riot Games New 2022.svg" alt="riot icon"/>
-        <a href="#"><img class="nav__val" src="./resources/val logo.svg" alt=""/></a>
+        <img
+          class="nav__riot"
+          src="./resources/Riot Games New 2022.svg"
+          alt="riot icon"
+        />
+        <a href="#"
+          ><img class="nav__val" src="./resources/val logo.svg" alt=""
+        /></a>
         <ul class="nav__ul">
           <li class="nav__li nav__li--1">GAME INFO</li>
           <li class="nav__li nav__li--2">MEDIA</li>
@@ -40,26 +47,52 @@
         <div class="nav__second">
           <div id="searchContainer" class="nav__search">
             <img class="nav__search--icon" src="./resources/lupa.png" alt="" />
-            <textarea class="nav__search--text" name="search" id="search"></textarea>
-            <img src="./resources/close.png" id="close" alt="close icon" class="nav__search--close"/>
+            <textarea
+              class="nav__search--text"
+              name="search"
+              id="search"
+            ></textarea>
+            <img
+              src="./resources/close.png"
+              id="close"
+              alt="close icon"
+              class="nav__search--close"
+            />
           </div>
           <div class="nav__btnContainer">
-            <img class="nav__language" src="./resources/language.svg" alt="world icon"/>
+            <img
+              class="nav__language"
+              src="./resources/language.svg"
+              alt="world icon"
+            />
           </div>
           <button class="nav__play">PLAY NOW</button>
         </div>
 
         <div class="mobileMenu__buttonContainer" id="mobileButton">
-          <img src="./resources/menu-button.svg" alt="menu icon" class="mobileMenu__button">
+          <img
+            src="./resources/menu-button.svg"
+            alt="menu icon"
+            class="mobileMenu__button"
+          />
         </div>
         <div class="mobileMenu" id="mobileMenu">
           <div class="mobileMenu__closeContainer" id="mobileClose">
-            <img class="mobileMenu__close" src="./resources/close.png" id="close" alt="close icon"/>
+            <img
+              class="mobileMenu__close"
+              src="./resources/close.png"
+              id="close"
+              alt="close icon"
+            />
           </div>
           <div class="mobileMenu__search">
             <img class="nav__search--icon" src="./resources/lupa.png" alt="" />
             <textarea class="nav__search--text" name="search"></textarea>
-            <img src="./resources/close.png" alt="close icon" class="mobileMenu__search--close"/>
+            <img
+              src="./resources/close.png"
+              alt="close icon"
+              class="mobileMenu__search--close"
+            />
           </div>
           <ul class="mobileMenu__menu">
             <li class="nav__li mobileMenu__li">GAME INFO</li>
@@ -75,6 +108,10 @@
         </div>
       </nav>
     </header>
+
+    <main>
+      
+    </main>
 
     <script src="./scripts/nav-responsive.js"></script>
   </body>
