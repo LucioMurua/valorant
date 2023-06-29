@@ -271,6 +271,7 @@ main {
   max-height: 570px;
   background-color: inherit;
   position: relative;
+  overflow-y: hidden;
 }
 
 .news__background {
@@ -304,13 +305,21 @@ main {
   display: flex;
 }
 
+.news__titleContainer{
+  overflow-y: hidden;
+  width: fit-content;
+  height: fit-content;
+  z-index: 10;
+  
+}
+
 .news__title{
   font-size: 7rem;
   font-family: var(--font-tungsten);
-  position: absolute;
+  /* position: absolute; */
   color: var(--color-redValorant);
   margin-top: 20px;
-  z-index: 10;
+  margin-bottom: -20px;
 }
 
 .news__squareContainer{
@@ -320,6 +329,7 @@ main {
   height: 10px;
   justify-content: space-between;
   margin: 50px auto;
+  justify-self: center;
 }
 
 .news__square{
@@ -329,7 +339,7 @@ main {
 }
 
 .news__link{
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   display: inline;
   text-decoration: none;
@@ -371,17 +381,17 @@ main {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  background-image: url(../resources/slider-img1.PNG);
+  background-image: url(../resources/slider-valo1.PNG);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 
 .slider__img1{
-  background-image: url(../resources/slider-img3.PNG);
+  background-image: url(../resources/slider-valo3.PNG);
 }
 .slider__img2{
-  background-image: url(../resources/slider-img2.PNG);
+  background-image: url(../resources/slider-valo2.PNG);
 }
 
 .slider__img::before{
@@ -430,7 +440,7 @@ main {
   }
 
   .news__background{
-    font-size: 1000%;
+    font-size: 500%;
   }
 
   .news__container{
@@ -441,11 +451,15 @@ main {
    flex-direction: column;
   }
 
+  .news__titleContainer{
+    order: 2;
+    margin: 0 0 -17px 0;
+  }
+
   .news__title{
     font-size: 4rem;
     position: inherit;
-    order: 2;
-    margin: 0 0 -17px 0;
+    margin: 0;
   }
 
   .news__squareContainer{
@@ -462,6 +476,7 @@ main {
     position: inherit;
     justify-self: flex-end;
     order: 4;
+    padding: 35px 0;
   }
 
   .news__slider{
@@ -477,5 +492,96 @@ main {
 
   .slider{
     scroll-snap-align: start;
+  }
+}
+
+
+/* =========== ACT SECTION ============ */
+
+.act{
+  background-image: url(../resources/episode-section-background.jpg);
+  width: 100vw;
+  background-position: center top;
+}
+
+.act__container{
+  height: 850px;
+  width: 80%;
+  max-width: 1300px;
+  border-left: 1px solid var(--color-beigeLight);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 30px;
+}
+
+.act__paragraph{
+  color: var(--color-beige);
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: .6rem;
+}
+
+.act__titleContainer{
+  width: fit-content;
+  height: fit-content;
+  margin: 40px 0 60px;
+  overflow-y: hidden;
+}
+
+.act__title{
+  color: var(--color-beige);
+  font-size: 8rem;
+  margin-bottom: -25px;
+  font-family: var(--font-tungsten);
+}
+
+.act__btn::after{
+  content: "ACT I OVERVIEW";
+}
+
+.act__figures{
+  height: 40px;
+  width: 100%;
+  margin-left: -30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.act__square1{
+  height: 10px;
+  width: 10px;
+  background-color: var(--color-redValorant);
+}
+
+.act__line{
+  height: 4px;
+  width: 100px;
+  background-color: var(--color-redValorant);
+  transform: translateX(150%);
+}
+
+.act__square2{
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-redValorant);
+  align-self: flex-end;
+}
+
+/* ========== ACT RESPONSIVE ============= */
+
+@media screen and (max-width: 1100px) {
+  .act{
+  }
+
+  .act__titleContainer{
+    margin-top: 0;
+  }
+
+  .act__title{
+    font-size: 4rem;
+    margin: 0;
   }
 }
