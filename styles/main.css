@@ -860,3 +860,85 @@ main {
 .overview__fill{
   flex-grow: 1;
 }
+
+/* ========== OVERVIEW RESPONSIVE ??????=========== */
+
+/* ========== AGENTS SECTIOIN ========= */
+.agents{
+  width: 100vw;
+  height: 860px;
+  display: flex;
+  background-color: var(--color-redValorant);
+}
+
+.agents__background1{
+  flex-grow: 1;
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 80px 20px 0 0;
+}
+
+.agents__background1Img{
+  background-image: url(../resources/background-sprite.png);
+  width: 34PX;
+  height: 540px;
+}
+
+.agents__content{
+  max-width: 1300px;
+  width: 80%;
+  justify-self: center;
+  flex-grow: 0;
+  border-left: 1px solid var(--color-beigeLight);
+  position: relative;
+}
+
+.content__background{
+  background-image: url(../resources/agents-background.PNG);
+  background-repeat:repeat;
+  background-position: center -10px;
+  background-size:contain;
+  width: 100%;
+  height: 90%;
+  margin: 60px auto 0;
+  position: absolute;
+}
+
+.content__models{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid greenyellow;
+  position: relative;
+}
+
+.content__reyna{
+  position: absolute;
+  width: 90%;
+  left: -20%;
+}
+
+.content__raze{
+  transform: rotateY(180deg) translateY(80px);
+  position: absolute;
+  width: 90%;
+  right: -20%;
+}
+
+.agents__background2{
+  width: 10%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.agents__background2Img{
+  background-image: url(../resources/background-sprite.png);
+  width: 34px;
+  height: 540px;
+  background-position: 26% top;
+  margin: 80px 40px;
+}
