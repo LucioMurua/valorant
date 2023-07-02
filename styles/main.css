@@ -892,6 +892,7 @@ main {
   flex-grow: 0;
   border-left: 1px solid var(--color-beigeLight);
   position: relative;
+  display: flex;
 }
 
 .content__background{
