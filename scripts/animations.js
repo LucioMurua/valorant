@@ -92,7 +92,8 @@ if (isDesktop()) {
     }
   );
 
-  gsap.fromTo(".agents__models",
+  gsap.fromTo(
+    ".agents__models",
     { y: 50 },
     {
       y: -130,
@@ -103,11 +104,33 @@ if (isDesktop()) {
     }
   );
 
-  gsap.from('.agents__title',{
-    y: '100%',
-    delay: .2,
+  gsap.from(".agents__title", {
+    y: "100%",
+    delay: 0.2,
+    scrollTrigger: {
+      trigger: ".agents__titleContainer",
+    },
+  });
+
+  // ========== MAPS SECTION =========
+  gsap.fromTo(
+    ".maps__place",
+    { y: -140 },
+    {
+      y: 50,
+      scrollTrigger: {
+        trigger: ".maps__place",
+        scrub: 1,
+      },
+    }
+  );
+
+  gsap.to('.maps__birds', {
+    x:-60,
+    y:-80,
     scrollTrigger:{
-      trigger:'.agents__titleContainer',
+      trigger: '.maps__birds',
+      scrub: 1
     }
   })
 }

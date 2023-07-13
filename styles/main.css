@@ -24,7 +24,7 @@
 
 main {
   font-family: var(--font-barlowBold);
-  background-color: var(--color-beige);
+  /* background-color: var(--color-beige); */
   /* font-size: 150px;
     border: 1px solid red;
     -webkit-text-stroke-color: #dbd8d2;
@@ -272,6 +272,7 @@ main {
   background-color: inherit;
   position: relative;
   overflow-y: hidden;
+  background-color: var(--color-beige);
 }
 
 .news__background {
@@ -590,6 +591,7 @@ main {
   width: 100vw;
   height: 970px;
   display: flex;
+  background-color: var(--color-beige);
   /* grid-template-columns: minmax(1fr, auto) minmax(80%, 1300px) 10%; */
   /* position: relative; */
 }
@@ -935,6 +937,7 @@ main {
   height: 860px;
   display: flex;
   background-color: var(--color-redValorant);
+  z-index: 5;
 }
 
 .agents__background1{
@@ -1148,7 +1151,8 @@ main {
 .maps{
   height: 780px;
   width: 100vw;
-  transform: translateX(0);
+  /* transform: translateX(0); */
+  z-index: 1;
   background-color: var(--color-beige);
   /* background-color: aqua; */
   justify-content: center;
@@ -1156,6 +1160,7 @@ main {
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-areas: "a b b";
   position: relative;
+  overflow: hidden;
 }
 
 .maps__sideBackground{
@@ -1218,7 +1223,7 @@ main {
 
 .maps__place{
   position: absolute;
-  font-size: 20rem;
+  font-size: 18rem;
   color: var(--color-beige);
   font-weight: 900;
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.212));
@@ -1231,7 +1236,7 @@ main {
 
 .maps__text{
   width: 40%;
-  height: 60%;
+  height: 70%;
   margin-left: 100px;
   border-top: 1px solid var(--color-black);
   display: flex;
@@ -1243,17 +1248,20 @@ main {
 .maps__title{
   font-size: 9rem;
   font-family: var(--font-tungsten);
+  line-height: 130px;
 }
 
 .maps__subtitle{
   font-size: 1.3rem;
   font-weight: 600;
+  padding: 30px 0;
 }
 
 .maps__paragraph{
   font-weight: 600;
   color: rgba(0, 0, 0, 0.4);
   width: 90%;
+  padding-bottom: 30px;
 }
 
 .mapsBtn__borderTop{
@@ -1270,4 +1278,41 @@ main {
 
 .maps__btn::after{
   content: "VIEW ALL MAPS";
+}
+
+/* ========= MAPS RESPONSIVE ========== */
+@media screen and (max-width: 1100px) {
+  .maps{
+    height: 1000px;
+    z-index: -1;
+  }
+
+  .maps__place{
+    display: none;
+  }
+  
+  .maps__text{
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .maps__title{
+    font-size: 6rem;
+  }
+
+  .maps__paragraph{
+    font-size: 1.1rem;
+    line-height: 24px;
+  }
+
+  .maps__btnContainer{
+    bottom: 0;
+    align-self: center;
+    position: absolute;
+  }
+
+
+
+  
 }
